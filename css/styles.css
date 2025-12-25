@@ -95,7 +95,6 @@ h2::after {
 .buttons-container {
     display: flex;
     gap: 10px;
-    /* Espacio entre los botones */
 }
 
 
@@ -170,15 +169,12 @@ h2::after {
 .contact-button {
     display: flex;
     justify-content: center;
-    /* centra horizontalmente */
     margin-top: 20px;
-    /* opcional, espacio arriba del botón */
 }
 
 .btn {
     padding: 10px 20px;
     background-color: #007bff;
-    /* azul, cambia si quieres */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -299,4 +295,5 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
 }

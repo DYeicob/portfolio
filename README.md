@@ -28,5 +28,3 @@ git clone https://github.com/your-username/portfolio.git
 ## 👤 Author
 
 **Jacobo Montero Naranjo**
-
-Would you like me to help you write a "Contact" or "About Me" section to add to this README?

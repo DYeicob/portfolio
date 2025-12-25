@@ -1,27 +1,32 @@
-# Portfolio de Jacobo Montero Naranjo
+# Jacobo Montero Naranjo's Portfolio
 
-Este repositorio contiene el código fuente de mi portfolio personal.
+This repository contains the source code for my personal portfolio.
 
-## 🛠 Tecnologías
+## 🛠 Technologies
 
-*   **HTML5**
-*   **CSS3** (Variables CSS, Flexbox, Grid)
-*   **JavaScript** (ES6+)
+* **HTML5**
+* **CSS3** (CSS Variables, Flexbox, Grid)
+* **JavaScript** (ES6+)
 
-## 🚀 Instalación y Uso
+## 🚀 Installation and Usage
 
-1.  Clona este repositorio:
-    ```bash
-    git clone https://github.com/tu-usuario/portfolio.git
-    ```
-2.  Abre el archivo `index.html` en tu navegador web.
+1. Clone this repository:
+```bash
+git clone https://github.com/your-username/portfolio.git
 
-## 📂 Estructura
+```
 
-*   `/css`: Hoja de estilos.
-*   `/js`: Lógica del sitio.
-*   `/img`: Imágenes del proyecto.
 
-## 👤 Autor
+2. Open the `index.html` file in your web browser.
+
+## 📂 Structure
+
+* `/css`: Stylesheets.
+* `/js`: Site logic.
+* `/img`: Project images.
+
+## 👤 Author
 
 **Jacobo Montero Naranjo**
+
+Would you like me to help you write a "Contact" or "About Me" section to add to this README?

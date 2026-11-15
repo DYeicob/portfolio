@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Jacobo Montero Naranjo</title>
+    <title>Jacobo Montero Naranjo · Software Development Portfolio</title>
+    <meta name="description" content="Portfolio of Jacobo Montero Naranjo, 3rd-year Computer Engineering student at ESEI (Universidade de Vigo) and Assistant at GDG Ourense. Python, C, Java, FastAPI, PyTorch, kernels and cybersecurity labs.">
+    <meta name="author" content="Jacobo Montero Naranjo">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jacobo Montero Naranjo · Software Development Portfolio">
+    <meta property="og:description" content="Computer Engineering student (ESEI, Universidade de Vigo) · Assistant at GDG Ourense · Open to internships and junior software roles.">
+    <meta property="og:url" content="https://portfolio-jmn.netlify.app/">
+    <meta property="og:image" content="https://portfolio-jmn.netlify.app/img/profile.jpg">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -13,186 +20,305 @@
     <header>
         <div class="header-content">
             <h1>Jacobo Montero Naranjo</h1>
-            <p>Programmer • Student at ESEI</p>
+            <p>Computer Engineering student · Software development</p>
         </div>
-        <nav>
+        <nav aria-label="Main">
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#personal-projects">Personal Projects</a></li>
-                <li><a href="#team-projects">Team Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="img/profile.jpg" alt="Jacobo's Profile Picture" class="about-img">
-            <div class="about-text">
-                <p>Hi! I'm Jacobo Montero Naranjo, a programming enthusiast and an active student at ESEI. I enjoy tackling complex problems and learning technologies that allow me to grow both personally and professionally.</p>
-                <p>My current focus is built on three pillars: web development, cybersecurity, and neural networks.</p>
-                <p>In recent months, I have delved deeply into the field of cybersecurity through a course taught by ASOC and a hardware hacking workshop. These experiences have reinforced my interest in understanding how systems work at a low level and how to protect them.</p>
-                <p>I am looking for opportunities that allow me to apply my knowledge, contribute to real-world solutions with a strong technical and business understanding, and continue developing as a software programmer.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="training">
-        <h2>Additional Training (Santander Open Academy)</h2>
-        <div class="training-wrapper">
-            <div class="training-card">
-                <h3>Artificial Intelligence and Data</h3>
-                <ul>
-                    <li>Introduction to Generative AI (MIT Professional Education content)</li>
-                    <li>AI and Productivity (Google content)</li>
-                    <li>Responsible Prompting (Microsoft + Founderz content)</li>
-                    <li>Introduction to Data Science (IE University content)</li>
-                </ul>
-            </div>
-            <div class="training-card">
-                <h3>Systems and Business Technology</h3>
-                <ul>
-                    <li>Internet of Things (MIT Professional Education content)</li>
-                    <li>Digital Transformation (MIT Professional Education content)</li>
-                    <li>Ecommerce for SMEs (IE University content)</li>
-                </ul>
-            </div>
-            <div class="training-card">
-                <h3>Marketing and Business Skills</h3>
-                <ul>
-                    <li>Storytelling in Digital Marketing (University of Chicago content)</li>
-                    <li>Consumer Behavior (University of Miami content)</li>
-                    <li>Negotiation (ESADE content)</li>
-                    <li>Digital Leadership (IE University content)</li>
-                    <li>Strategic Communication (IE University content)</li>
-                    <li>English Fundamentals (University of Pennsylvania content)</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="personal-projects">
-        <h2>Personal Projects</h2>
-        <div class="projects-grid">
-            <article class="card">
-                <img src="img/personal-project1.jpg" alt="Personal Project 1" class="card-img">
-                <div class="card-content">
-                    <h3>Educational Project: Controlled Simulated Threat (SimuThreat)</h3>
-                    <p>This code project was designed and tested EXCLUSIVELY for use in Virtual Machines (VMs) or isolated testing environments. 
-                        UNDER NO CIRCUMSTANCES should it be executed on production operating systems, personal systems, or real corporate networks. Its purpose is 100% educational and defensive.</p>
-                    <a href="https://github.com/DYeicob/CyberEd_Simulated_Threat.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/personal-project2.jpg" alt="Personal Project 2" class="card-img">
-                <div class="card-content">
-                    <h3>U-Net Image Segmentation Project</h3>
-                    <p>This project implements an image segmentation model using the U-Net architecture with PyTorch.</p>
-                    <a href="https://github.com/DYeicob/unet_project.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/personal-project3.jpg" alt="Personal Project 3" class="card-img">
-                <div class="card-content">
-                    <h3>MolonVirusSim - Academic Simulator (Harmless)</h3>
-                    <p>A cybersecurity practice project that simulates malware behavior (infection, persistence, C2, propagation, payload) without causing real damage.</p>
-                    <a href="https://github.com/DYeicob/Proyecto-Virus-Molon.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/personal-project4.jpg" alt="Personal Project 4" class="card-img">
-                <div class="card-content">
-                    <h3>Educational Mini Kernel – Scheduler + IPC</h3>
-                    <p>The goal is to implement a Round Robin scheduler and a basic Inter-Process Communication (IPC) system using message queues. 
-                        The kernel is simulated in user space with C code and organized into independent modules.</p>
-                    <a href="https://github.com/DYeicob/kernel-project.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/personal-project5.jpg" alt="Personal Project 5" class="card-img">
-                <div class="card-content">
-                    <h3>RoomieMatch</h3>
-                    <p>RoomieMatch is a web application designed to help people find their ideal roommate. It allows users to create profiles, explore other users, manage room or flat listings, send private messages, and leave reviews.</p>
-                    <a href="https://github.com/DYeicob/RoomieMatch_1.0.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/personal-project6.jpg" alt="Personal Project 6" class="card-img">
-                <div class="card-content">
-                    <h3>AUREA</h3>
-                    <p>AUREA is an online fashion store offering timeless and sophisticated collections, focused on providing elegance and style for special occasions. Our motto: "It's not just style, it's presence."</p>
-                    <a href="https://github.com/DYeicob/Aurea_1.0.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/personal-project7.jpg" alt="Personal Project 7" class="card-img">
-                <div class="card-content">
-                    <h3>Expense AI Assistant</h3>
-                    <p><strong>Full-Stack AI Project:</strong> Intelligent expense management system using <strong>FastAPI</strong> and <strong>Streamlit</strong>. Features automated data extraction from receipts via <strong>OCR (EasyOCR)</strong> and smart classification using Machine Learning.</p>
-                    <a href="https://github.com/DYeicob/expense-ai-assistant" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section id="team-projects">
-        <h2>Team Projects</h2>
-        <div class="projects-grid">
-            <article class="card">
-                <img src="img/team-project1.png" alt="Team Project 1" class="card-img">
-                <div class="card-content">
-                    <h3>Implementation of the game "¡Chúpate 2!" in Java (Maven + NetBeans)</h3>
-                    <p>This project is part of the Algorithms and Data Structures I (AED I) course at ESEI, developed as a group following specifications provided by the faculty.</p>
-                    <a href="https://github.com/DYeicob/Chupate2_JAVA.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/team-project2.jpg" alt="Team Project 2" class="card-img">
-                <div class="card-content">
-                    <h3>KRNL</h3>
-                    <p>Developed in collaboration with ASOC, this project consists of a minimalist, standalone x86_64 kernel, built as an ELF and booted from an EFI partition (GPT/FAT) using Limine boot components (BOOTX64.EFI). It includes scripts to create disk images, run them in QEMU with OVMF, and facilitate debugging.</p>
-                    <a href="https://github.com/ASOC25/KRNL.git" class="btn" target="_blank">View on GitHub</a>
-                </div>
-            </article>
-
-            <article class="card">
-                <img src="img/team-project3.jpg" alt="Team Project 3" class="card-img">
-                <div class="card-content">
-                    <h3>ASOC Cybersecurity Course Group Website</h3>
-                    <p>A web platform hosting all the projects developed during the course.</p>
-                    <div class="buttons-container">
-                        <a href="https://github.com/asocg2025/PresentacionGrupoG.git" class="btn" target="_blank">View on GitHub</a>
-                        <a href="https://hackeandosincondonweb.netlify.app/" class="btn" target="_blank">Visit Website</a>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="img/profile.jpg" alt="Portrait of Jacobo Montero Naranjo" class="about-img">
+                <div class="about-text">
+                    <p class="status"><span class="dot" aria-hidden="true"></span> Open to internships and junior software development roles</p>
+                    <p>Hi! I'm Jacobo, a 3rd-year Computer Engineering student at the <strong>ESEI (Universidade de Vigo, Ourense campus)</strong> and Assistant at <strong>GDG Ourense</strong>, where I helped organise DevFest 2026.</p>
+                    <p>I've published 10 projects (7 personal, 3 team): an expense manager with FastAPI and OCR, an x86_64 kernel booted through UEFI, image segmentation with PyTorch and malware simulators for isolated cybersecurity labs. I like understanding how systems work from the low level up, and building tools that are actually useful.</p>
+                    <p>Outside the keyboard I'm a national-level sailor in the ILCA 7 class and I'm preparing my campaign for the Windsurfer World Championship 2027. Training and competing taught me discipline, planning and how to perform under pressure.</p>
+                    <div class="link-row">
+                        <a href="https://github.com/DYeicob" class="btn" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://www.linkedin.com/in/jacobo-montero-naranjo-a499393a6/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="#contact" class="btn btn-outline">Contact</a>
                     </div>
                 </div>
-            </article>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-button">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=monteronaranjojacobo@gmail.com&su=Inquiry"
-                target="_blank" class="btn">
-                Send Email
-            </a>
-        </div>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="period">Sep 2026 – Present</span>
+                        <span class="place">Ourense</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h3>Assistant · Google Developer Group (GDG) Ourense</h3>
+                        <ul>
+                            <li>Co-organised <strong>DevFest 2026</strong> (7 November, ESEI): a full day (9:00–20:30) with around 200 attendees, national and international speakers, hands-on workshops and demos from 3 startups.</li>
+                            <li>Managed sponsors and event logistics.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="period">Summers 2022 – 2024</span>
+                        <span class="place">A Coruña</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h3>Sailing Coach &amp; Instructor · Real Club Náutico de La Coruña</h3>
+                        <ul>
+                            <li>Led groups of competitive sailing students, responsible for their safety and technical progress.</li>
+                            <li>Handled equipment logistics and team communication for training sessions and regional events.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <h3 class="subsection-title">Personal projects</h3>
+            <div class="projects-grid">
+                <article class="card">
+                    <img src="img/personal-project7.jpg" alt="Expense AI Assistant" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Expense AI Assistant</h3>
+                        <p>Expense manager with a <strong>FastAPI</strong> REST API (full CRUD, summaries by period and category), receipt data extraction from photos with <strong>EasyOCR</strong>, ML-based expense classification and a <strong>Streamlit</strong> dashboard. In progress: spending forecasts, budgets with alerts and JWT authentication.</p>
+                        <ul class="tags"><li>Python</li><li>FastAPI</li><li>Streamlit</li><li>EasyOCR</li><li>ML</li></ul>
+                        <a href="https://github.com/DYeicob/expense-ai-assistant" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/personal-project4.jpg" alt="Educational mini kernel" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Educational Mini Kernel: Scheduler + IPC</h3>
+                        <p>Round Robin scheduler with configurable quantum, process management with PCBs and 3 states (READY, RUNNING, BLOCKED), and message-queue IPC with process blocking/unblocking. Split into 3 independent modules with their own tests.</p>
+                        <ul class="tags"><li>C</li><li>gcc</li><li>Make</li><li>OS</li></ul>
+                        <a href="https://github.com/DYeicob/kernel-project" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/personal-project2.jpg" alt="U-Net image segmentation" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>U-Net Image Segmentation</h3>
+                        <p>U-Net architecture implemented in <strong>PyTorch</strong>, with a configurable training script (epochs, batch size, learning rate), automatic best-model checkpointing, evaluation metrics and a notebook to visualise training and results.</p>
+                        <ul class="tags"><li>Python</li><li>PyTorch</li><li>Deep Learning</li></ul>
+                        <a href="https://github.com/DYeicob/unet_project" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/personal-project3.jpg" alt="MolonVirusSim" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>MolonVirusSim: Malware Behaviour Simulator</h3>
+                        <p>Harmless academic simulator of the 5 phases of malware (infection, persistence, C2, propagation and payload) with a C2 server, agent and killswitch, run only in isolated virtual machines.</p>
+                        <ul class="tags"><li>Python</li><li>Cybersecurity</li><li>C2</li></ul>
+                        <a href="https://github.com/DYeicob/Molon-Virus-Project" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/personal-project1.jpg" alt="SimuThreat" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>SimuThreat: Controlled Simulated Threat</h3>
+                        <p>Defensive lab that demonstrates LOLBAS techniques, with documented attack flow, VM preparation and a clean-up tool. <em>Educational use only, in VMs or isolated environments.</em></p>
+                        <ul class="tags"><li>Batch</li><li>PowerShell</li><li>LOLBAS</li></ul>
+                        <a href="https://github.com/DYeicob/CyberEd_Simulated_Threat" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/personal-project5.jpg" alt="RoomieMatch" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>RoomieMatch</h3>
+                        <p>Web app to find a flatmate: sign-up and login, profiles, search by tags and budget, listings, favourites, messaging and reviews, with persistence in localStorage.</p>
+                        <ul class="tags"><li>JavaScript</li><li>lit-html</li><li>HTML5</li><li>CSS3</li></ul>
+                        <a href="https://github.com/DYeicob/RoomieMatch_1.0" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/personal-project6.jpg" alt="AUREA" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>AUREA</h3>
+                        <p>Responsive concept fashion store with product filtering by category, a contact form and ARIA attributes for accessibility.</p>
+                        <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Accessibility</li></ul>
+                        <a href="https://github.com/DYeicob/Aurea_1.0" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="subsection-title">Team projects</h3>
+            <div class="projects-grid">
+                <article class="card">
+                    <img src="img/team-project2.jpg" alt="KRNL x86_64 kernel" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>KRNL: x86_64 Kernel <span class="badge">ASOC 25</span></h3>
+                        <p>Standalone x86_64 kernel built as an ELF and booted from an EFI partition (GPT/FAT) with Limine. We automated disk-image creation, running under QEMU with OVMF and debugging with scripts.</p>
+                        <ul class="tags"><li>x86_64</li><li>UEFI</li><li>Limine</li><li>QEMU/OVMF</li></ul>
+                        <a href="https://github.com/ASOC25/KRNL" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/team-project1.jpg" alt="¡Chúpate 2! card game" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>¡Chúpate 2! <span class="badge">AED I · 2024/25</span></h3>
+                        <p>Card game for 2–5 players with the 40-card Spanish deck, built as a team following the faculty's specification, with game logic (core) separated from the text interface (ui).</p>
+                        <ul class="tags"><li>Java 17</li><li>Maven</li><li>NetBeans</li></ul>
+                        <a href="https://github.com/DYeicob/Chupate2_JAVA" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="img/team-project3.jpg" alt="ASOC course group website" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>ASOC 25 Group Website <span class="badge">ASOC 25</span></h3>
+                        <p>Website that brings together all the projects our group developed during the ASOC cybersecurity course.</p>
+                        <ul class="tags"><li>HTML</li><li>CSS</li><li>Netlify</li></ul>
+                        <div class="buttons-container">
+                            <a href="https://github.com/asocg2025/PresentacionGrupoG" class="btn" target="_blank" rel="noopener">View on GitHub</a>
+                            <a href="https://hackeandosincondonweb.netlify.app/" class="btn btn-outline" target="_blank" rel="noopener">Visit Website</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <ul class="tags"><li>Python</li><li>C</li><li>Java</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>SQL</li><li>Prolog</li><li>Batch/PowerShell</li></ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Frameworks &amp; libraries</h3>
+                    <ul class="tags"><li>FastAPI</li><li>Streamlit</li><li>PyTorch</li><li>EasyOCR</li><li>lit-html</li></ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Systems &amp; low level</h3>
+                    <ul class="tags"><li>Linux</li><li>QEMU/OVMF</li><li>Limine (UEFI)</li><li>gcc</li><li>Make</li><li>Docker</li><li>Oracle Database</li></ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <ul class="tags"><li>Git</li><li>GitHub</li><li>Maven</li><li>NetBeans</li><li>Netlify</li></ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cybersecurity</h3>
+                    <ul class="tags"><li>Isolated VM labs</li><li>C2 &amp; persistence simulation</li><li>LOLBAS</li><li>Hardware hacking (workshop)</li></ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Spoken languages</h3>
+                    <ul class="tags"><li>Spanish (native)</li><li>Galician (Celga 4)</li><li>English (B1)</li></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="period">Sep 2024 – Jun 2028 (expected)</span>
+                        <span class="place">Ourense</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h3>BSc in Computer Engineering · ESEI, Universidade de Vigo</h3>
+                        <p>Currently in 3rd year. Courses and labs include Algorithms and Data Structures I &amp; II, Databases II (Oracle), User Interfaces and Computational Logic (Prolog).</p>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="period">Oct 2025 – May 2026</span>
+                        <span class="place">Ourense</span>
+                    </div>
+                    <div class="timeline-body">
+                        <h3>ASOC 25 · Cybersecurity course · Ourensec</h3>
+                        <ul>
+                            <li>Passed the instructors' direct assessment; certificate issued on 29/04/2026 (credential ID 2fc4d6fe7c12040aa8b43765ac278434).</li>
+                            <li>Completed the hardware hacking workshop included in the course.</li>
+                            <li>Built the KRNL kernel and the course projects website as part of a team.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <details class="training">
+                <summary>Additional training · Santander Open Academy (13 courses)</summary>
+                <div class="training-wrapper">
+                    <div class="training-card">
+                        <h3>Artificial Intelligence and Data</h3>
+                        <ul>
+                            <li>Introduction to Generative AI (MIT Professional Education content)</li>
+                            <li>AI and Productivity (Google content)</li>
+                            <li>Responsible Prompting (Microsoft + Founderz content)</li>
+                            <li>Introduction to Data Science (IE University content)</li>
+                        </ul>
+                    </div>
+                    <div class="training-card">
+                        <h3>Systems and Business Technology</h3>
+                        <ul>
+                            <li>Internet of Things (MIT Professional Education content)</li>
+                            <li>Digital Transformation (MIT Professional Education content)</li>
+                            <li>Ecommerce for SMEs (IE University content)</li>
+                        </ul>
+                    </div>
+                    <div class="training-card">
+                        <h3>Marketing and Business Skills</h3>
+                        <ul>
+                            <li>Storytelling in Digital Marketing (University of Chicago content)</li>
+                            <li>Consumer Behavior (University of Miami content)</li>
+                            <li>Negotiation (ESADE content)</li>
+                            <li>Digital Leadership (IE University content)</li>
+                            <li>Strategic Communication (IE University content)</li>
+                            <li>English Fundamentals (University of Pennsylvania content)</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <section id="beyond">
+            <h2>Beyond Code</h2>
+            <div class="beyond-card">
+                <p>I compete nationally for the <strong>Real Club Náutico de La Coruña</strong> in the <strong>ILCA 7</strong>, a single-handed Olympic-class dinghy, and I'm preparing my official campaign for the <strong>Windsurfer World Championship</strong> (Langebaan, South Africa, 6–12 March 2027).</p>
+                <ul class="results">
+                    <li><span>3rd</span> Open de España ILCA, Semana Abanca (Vigo), 2026</li>
+                    <li><span>2nd</span> ILCA Qualifying Regatta, RCN Sanxenxo, 2026</li>
+                    <li><span>3rd</span> ILCA Qualifying Regatta, Ares, 2025</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p class="contact-intro">Looking for an intern or a junior developer? I'd be happy to talk.</p>
+            <div class="contact-button">
+                <a href="mailto:monteronaranjojacobo@gmail.com" class="btn">monteronaranjojacobo@gmail.com</a>
+                <a href="https://www.linkedin.com/in/jacobo-montero-naranjo-a499393a6/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/DYeicob" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Jacobo Montero Naranjo. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> Jacobo Montero Naranjo · Ourense &amp; A Coruña, Galicia</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
-
